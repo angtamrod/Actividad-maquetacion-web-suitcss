@@ -4,55 +4,61 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Maquetación SUITCSS</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&family=Rubik:ital,wght@0,300..900;1,300..900&display=swap" rel="stylesheet">
+   
+    <link rel="stylesheet" href="css/estilos.css">
 </head>
 <body>
-    <header>
-        <nav>
-            <a href="index.html"><img src="imgs/logo.png" alt=""></a>
-            <ul>
-                <li><a href="all-prints.html">All Prints</a></li>
-                <li><a href="about-us.html">About Us</a></li>
-                <li><a href="contacts.html">Contacts</a></li>
+    <header class="header">
+        <nav class="nav">
+            <a href="index.html"><img class="nav__img" src="imgs/logo.png" alt=""></a>
+            <ul class="nav__ul">
+                <li class="nav__li">All Prints</li>
+                <li class="nav__li">About Us</li>
+                <li class="nav__li">Contacts</li>
             </ul>
         </nav>
     </header>
-    <main>
-        <section>
+    <main class="main">
+        <p class="main__p">Check out some of the stuff we have worked on with and work spanning across several <br> different mediums including digital prints, company brandings & more</p>
+        <section class="galeria">
 
-            <p>Check out some of the stuff we have worked on with and work spanning across several different mediums including digital prints, company brandings & more</p>
+            
 
-            <div>
-                <div><img src="imgs/print-port-1.jpg" alt=""></div>
-                <div><img src="imgs/print-port-2.jpg" alt=""></div>
-                <div><img src="imgs/print-port-3.jpg" alt=""></div>
-                <div><img src="imgs/print-port-4.jpg" alt=""></div>
+            <div class="galeria__fila">
+                <img class="galeria__img" src="imgs/print-port-1.jpg" alt="">
+                <img class="galeria__img"  src="imgs/print-port-2.jpg" alt="">
+                <img class="galeria__img" src="imgs/print-port-3.jpg" alt="">
+                <img class="galeria__img" src="imgs/print-port-4.jpg" alt="">
             </div>
             
-            <div>
-                <div><img src="imgs/print-port-5-1.jpg" alt=""></div>
-                <div><img src="imgs/print-port-6.jpg" alt=""></div>
-                <div><img src="imgs/print-port-8.jpg" alt=""></div>
-                <div><img src="imgs/print-port-9.jpg" alt=""></div>
+            <div class="galeria__fila">
+                <img class="galeria__img" src="imgs/print-port-5-1.jpg" alt="">
+                <img class="galeria__img" src="imgs/print-port-6.jpg" alt="">
+                <img class="galeria__img" src="imgs/print-port-8.jpg" alt="">
+                <img class="galeria__img" src="imgs/print-port-9.jpg" alt="">
             </div>
             
-            <div>
-                <div><img src="imgs/print-port-10.jpg" alt=""></div>
-                <div><img src="imgs/print-port-11.jpg" alt=""></div>
-                <div><img src="imgs/print-port-12.jpg" alt=""></div>
-                <div><img src="imgs/print-port-13.jpg" alt=""></div>
+            <div class="galeria__fila">
+                <img class="galeria__img" src="imgs/print-port-10.jpg" alt="">
+                <img class="galeria__img" src="imgs/print-port-11.jpg" alt="">
+                <img class="galeria__img" src="imgs/print-port-12.jpg" alt="">
+                <img class="galeria__img" src="imgs/print-port-13.jpg" alt="">
             </div>
 
-            <a href="">Show more</a>
+            <a class="galeria__a" href="">Show more</a>
 
         </section>
     </main>
-    <footer>
-        <h3>All rights reserved  Qode Interactivee 2020</h3>
-        <ul>
-            <li><a href="https://www.instagram.com/">Instagram</a></li>
-            <li><a href="https://www.facebook.com/?locale=es_ES">Facebook</a></li>
-            <li><a href="https://www.behance.net/">Behance</a></li>
-            <li><a href="https://www.pinterest.es/">Pinterest</a></li>
+    <footer class="footer">
+        <p class="footer__p">All rights reserved  Qode Interactivee 2020</p>
+        <ul class="footer__ul">
+            <li class="footer__li">Instagram</li>
+            <li class="footer__li">Facebook</li>
+            <li class="footer__li">Behance</li>
+            <li class="footer__li">Pinterest</li>
         </ul>
     </footer>
 </body>
