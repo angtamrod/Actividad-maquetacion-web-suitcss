@@ -16,115 +16,225 @@ body{
     
     flex-direction: row;
     width: 100%;
-    height: 15%;
+    height: 20%;
 }
 
 .Nav{
     display: flex;
     width: 100%;
     height: 30%;
-    gap: 75%;
+    gap:60%;
     padding: 2%;
     
     }
+
+    .Nav--logo{
+    width: 18%;
+    margin-left: 2%;
+    margin-top: 0.5%;
+    }
     .Nav-img{
         
-      float: left;
-      width: 100%;
-      height: 80%;
-      margin-left: 2%;
-      margin-top: 0.5%;
+      object-fit: cover;
       
         
     }
     
-    .Nav-ul{
+    .Nav--navbar{
+    
+    width: 70%;
+    margin-left: 5%;
     display: flex;
     flex-direction: row;
-    justify-content:space-around;
+    justify-content: space-evenly;
+    
+    
+    margin-top: 0.5%;
+   
     
     
     }
     
-    .Nav-li{
-        display: inline;
-        padding-right: 0.5em;
-        text-decoration: none;
-        list-style-type: none;
+    .Nav-div{
+        
+        font-size: small;
         font-weight: bold;
-    }
-    
-    .Main{
-     display: flex;
-     flex-direction: column;
-     flex-grow: 1;
-     padding: 10px;
+        object-fit: cover;
     }
 
-    .Main-p{
-        padding: 10px;
-        margin-top: 1%;
-        margin-left: 10.5%;
+.Nav-div1{
+    text-decoration: underline;
+
+    
+    
+}
+
+
+
+
+
+    
+.Main{
+    display: flex;
+    flex-direction: column;
+    flex-grow: 1;
+    
+    
+    gap:3%;
+    }
+
+.Main-p{
+    
+    margin-top: 2%;
+    margin-left: 3%;
+    margin-bottom: 5%;
+    font-size: 18px;
         
     }
 
-    .Galeria{
-        flex-direction: column;
-        padding: 2%;
-        gap: 2%;
-        margin-top: 0.5%;
-    }
-    .Galeria-fila{
-        flex-direction: row;
-        margin-left: 9%;
-        justify-content: space-evenly;
-        
-        gap: 10%;
+
+
+.Main-a{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 2%;
+    text-decoration: none;
+    color: black;
+
     }
 
-    .Galeria-img{
-        width: 22%;
-        height: 32%;
-        padding: 5px;
-    }
+
+.Galeria{
+    width: 95vw;
+    height: 70%;
+    margin-left: 2%;
     
-    .Galeria-a{
-        display: flex;
-        justify-content: center;
-        margin-top: 10px;
-        text-decoration: none;
+    
+    display: grid;
+    grid-template-columns: 24% 24% 24% 24%;
+    grid-template-rows: 33% 33% 33%;
+    grid-gap: 15px;
+    
+    grid-template-areas: "Galeria-img1 Galeria-img2 Galeria-img3 Galeria-img4"
+                         "Galeria-img5 Galeria-img6 Galeria-img7 Galeria-img8"
+                         "Galeria-img9 Galeria-img10 Galeria-img11 Galeria-img12"
+                         ;
 
-    }
-    .Footer{
-        flex-direction: row;
-        width: 100%;
-        height: 20%;  
-        padding: 10px;
-        justify-content: space-between;
+    justify-content:center;
+    align-content: center;
+
+    grid-auto-flow: row;
+    grid-auto-rows: 320px;
+    grid-auto-columns: 200px;
+    
+}
+
+.Galeria-img{
+    width: 100%;
+    
+}
+
+.Galeria-img1{
+    grid-area: Galeria-img1;
+}
+
+.Galeria-img2{
+    grid-area: Galeria-img2;
+}
+
+.Galeria-img3{
+    grid-area: Galeria-img3;
+}
+
+.Galeria-img4{
+    grid-area: Galeria-img4;
+}
+
+.Galeria-img5{
+    grid-area: Galeria-img5;
+}
+
+.Galeria-img6{
+    grid-area: Galeria-img6;
+}
+
+.Galeria-img7{
+    grid-area: Galeria-img7;
+}
+
+.Galeria-img8{
+    grid-area: Galeria-img8;
+}
+
+.Galeria-img9{
+    grid-area: Galeria-img9;
+}
+
+.Galeria-img10{
+    grid-area: Galeria-img10;
+}
+
+.Galeria-img11{
+    grid-area: Galeria-img11;
+}
+
+.Galeria-img12{
+    grid-area: Galeria-img12;
+}
+
+
+
+.Footer{
+    display: flex;
+    flex-direction: row;
+    width: 100%;
+    height: 40%; 
+    margin-top: 2%; 
+    
+    justify-content: center;
+    align-items: center;
+    
+    
     }
 
-    .Footer-p{
-       display: flex;
-       text-align: center;
-       margin-left: 20px;
-       margin-top: 50px;
+.Footer--caja{
+    justify-content: space-evenly;
+    width: 90%;
+    height: 20%;
+    border-top: 1px solid;
+    border-color: black;
+}
+
+.Footer-p{
+    display:block;
+    
+    margin-top: 2%;
+    
+    margin-left: 1%;
+    
+    font-size: small;
+    
        
     }
     
 
-    .Footer-ul{
-        display: flex;
-        flex-direction: row;
-        justify-content:flex-end;
-        margin-bottom: 15px;
-        margin-right: 5px;
+.Footer--barra{
+    
+    display: flex;
+    justify-content: right;
+    align-content: center;
+    height: 10%;
+    padding: 0;
+    margin-bottom: 4%;
+    gap: 1%;
+    margin-right: 0.5%;
+    
         
         }
         
-        .Footer-li{
-            display: inline;
-            padding-right: 0.5em;
-            text-decoration: none;
-            list-style-type: none;
-            font-size: bold;
+.Footer-div{
+    font-size: small;
+        
+
         }
