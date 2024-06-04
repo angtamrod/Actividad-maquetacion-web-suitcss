@@ -12,11 +12,21 @@ body{
     
 }
 
+
+@font-face {
+    font-display: swap; 
+    font-family: 'Rubik';
+    font-style: normal;
+    font-weight: 400;
+    src: url('../fonts/rubik-v28-latin-regular.woff2') format('woff2'); 
+  
+}
 .Header{
     
     flex-direction: row;
     width: 100%;
     height: 20%;
+    flex-wrap: wrap;
 }
 
 .Nav{
@@ -34,14 +44,11 @@ body{
     margin-top: 0.5%;
     }
     .Nav-img{
-        
-      object-fit: cover;
-      
-        
+    aspect-ratio: auto; 
+    object-fit: cover;   
     }
     
     .Nav--navbar{
-    
     width: 80%;
     height: 100%;
     margin-left: 5%;
@@ -50,46 +57,34 @@ body{
     justify-content: space-around;
     flex-wrap: wrap;
     align-items: center;
-    
-    
     margin-top: 0.5%;
-   
-    
-    
     }
     
-    .Nav-div{
-        display: flex;
-        font-size: small;
-        font-weight: bold;
-        object-fit: cover;
+    .Nav-a{
+    display: flex;
+    font-size: small;
+    font-weight: bold;
+    text-decoration: none;
+    color: black;
     }
 
-.Nav-div1{
-    text-decoration: underline;
-   
-}
-
-
-
-
-
-    
+  
 .Main{
     display: flex;
     flex-direction: column;
     flex-grow: 1;
-    padding-bottom: 4%;
-    
+    padding-bottom: 10x;
     gap:3%;
+    
     }
 
 .Main-p{
-    
+    max-width: 100%;
+    min-width: 50%;
     margin-top: 2%;
     margin-left: 3%;
     margin-bottom: 3%;
-    font-size: 18px;
+    font-size: 1.2em;
         
     }
 
@@ -101,34 +96,22 @@ body{
     align-items: center;
     margin-top: 2%;
     text-decoration: none;
-    
     color: black;
+    margin-bottom: 40px;
 
     }
 
 
 .Galeria{
     width: 100%;
-    height: 70%;
-    padding: 0 3%;
-    justify-content: center;
-    align-content: center;
-    
-    
-    
+    height: auto;
     display: grid;
+    padding: 0 3%;
     grid-template-columns: repeat(4, 1fr);
     grid-template-rows: repeat(3, 1fr);
     grid-gap: 1%;
-    
-    grid-template-areas: "Galeria-img1 Galeria-img2 Galeria-img3 Galeria-img4"
-                         "Galeria-img5 Galeria-img6 Galeria-img7 Galeria-img8"
-                         "Galeria-img9 Galeria-img10 Galeria-img11 Galeria-img12"
-                         ;
-
     justify-content:center;
     align-content: center;
-
     grid-auto-flow: row;
     grid-auto-rows: 320px;
     grid-auto-columns: 200px;
@@ -136,90 +119,53 @@ body{
 }
 
 .Galeria-img{
-    width: 100%;
+    aspect-ratio: auto; 
+     width: 100%;  
+}
+
+.Main--base{
+    display: flex;
+    flex-direction: row;
+    max-width: 100%;
+    padding: 0 10px;
+    
     
 }
 
-.Galeria-img1{
-    grid-area: Galeria-img1;
+.Main--linea{
+    width: 95%;
+    height: 0;
+    padding-top: 10px;
+    margin-left: 20px;
+    margin-right: 5px;
+    margin-bottom: 0;
+    border-bottom: solid 2px black;
+    
+    
 }
 
-.Galeria-img2{
-    grid-area: Galeria-img2;
+.Main-img{
+    aspect-ratio: auto;
+    width: 2%;
 }
-
-.Galeria-img3{
-    grid-area: Galeria-img3;
-}
-
-.Galeria-img4{
-    grid-area: Galeria-img4;
-}
-
-.Galeria-img5{
-    grid-area: Galeria-img5;
-}
-
-.Galeria-img6{
-    grid-area: Galeria-img6;
-}
-
-.Galeria-img7{
-    grid-area: Galeria-img7;
-}
-
-.Galeria-img8{
-    grid-area: Galeria-img8;
-}
-
-.Galeria-img9{
-    grid-area: Galeria-img9;
-}
-
-.Galeria-img10{
-    grid-area: Galeria-img10;
-}
-
-.Galeria-img11{
-    grid-area: Galeria-img11;
-}
-
-.Galeria-img12{
-    grid-area: Galeria-img12;
-}
-
-
 
 .Footer{
     display: flex;
     flex-direction: row;
     width: 100%;
-    height: 10%; 
-    justify-content: center;
-    
-    
+    height: 20%;  
+    flex-wrap: wrap;
+    justify-content: space-between;
+    padding: 0 40px 20px;
+    margin-top: 10px;
     }
 
-.Footer--caja{
-    justify-content: space-between;
-    align-items: flex-start;
-    flex-wrap: wrap;
-    width: 95%;
-    height: 10%;
-    border-top: 1px solid;
-    border-color: black;
-}
 
-.Footer--pie{
-    
-    padding-top: 10px;
+
+.Footer-p{
+    max-width: 40%;
     display: flex;
-    flex-direction: column;
-    
-    
-    
-    flex-wrap: wrap;
-    margin-left: 1%;
+    align-items: center;
     font-size: small;   
     }
     
@@ -228,23 +174,16 @@ body{
     
     display: flex;
     flex-direction: row;
-    flex-wrap: wrap;
-    justify-content: right;
+    max-width: 60%;
     align-content: center;
-    padding-bottom: 2%;;
     
-    gap: 1%;
-    margin-right: 0.5%;
+    gap: 2%;
+   }
+        
+.Footer-a{
     
-        
-        }
-        
-.Footer-div{
-    display: flex;
-    flex-wrap: wrap;
+    text-decoration: none;
+    color: black;
     padding: 0%;
-    
     font-size: small;
-        
-
-        }
+}
